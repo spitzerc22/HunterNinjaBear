@@ -16,34 +16,37 @@
     <main class="card game">
         <h1>HUNTER, NINJA, BEAR!</h1>
         <div class="play">
+        <!--Your Score-->
             <div class="yourScore">
                 <h3>YOUR SCORE</h3>
-                <p>0</p>
+                <p class="score">0</p>
             </div>
+        <!--3 choices-->
             <div class="cards">
                 <div class="hunter card bg-success">
                         <h3 class="card-text">HUNTER</h3>
-                        <img src="assets/hunter.face.png" alt="Hunter Choice">
+                        <img src="assets/hunter.face.png" alt="Hunter Choice" class="img">
                 </div>
                 <div class="ninja card bg-dark">
                         <h3 class="card-text text-white">NINJA</h3>
-                        <img src="assets/ninja.face.png" alt="Ninja Choice">
+                        <img src="assets/ninja.face.png" alt="Ninja Choice" class="img">
                 </div>
                 <div class="bear card bg-primary">
                         <h3 class="card-text">BEAR</h3>
-                        <img src="assets/bear.face.png" alt="Bear Choice">
+                        <img src="assets/bear.face.png" alt="Bear Choice" class="img">
                 </div>
                 
             </div>
+        <!--Compares Choices-->
             <div class="whoWins">
                 <span class="yourChoice">
                     <h3>YOU CHOSE</h3>
                     <div class="yourImg">
-                        <img src="assets/hunter.face.png" alt="YOU CHOSE !" class="card bg-success">
+                        <img src="assets/hunter.face.png" alt="YOU CHOSE !" class="card bg-success" id="userPickImage">
                     </div>
                 </span>
                 <span class="whoWon">
-                    <h3>YOU WIN</h3>
+                    <h3 id="winner">YOU WIN</h3>
                     <button class="btn btn-warning playAgain">PLAY AGAIN</button>
                 </span>
                 <span class="compChoice">
@@ -53,12 +56,14 @@
                     </div>
                 </span>
             </div>
+        <!--Computer Score-->
             <div class="compScore">
                 <h3>COMPUTER SCORE</h3>
-                <p>0</p>
+                <p class="comscore">0</p>
             </div>
         </div>
     </main>
+<!--Buttons at bottom of page-->
     <div class="buttons">
         <span class="button">
             <button type="button" class="btn btn-warning btn-lg"><a href="index.html">Home</a> </button>

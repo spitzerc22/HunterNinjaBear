@@ -17,7 +17,7 @@ body{
 .button{
     display: flex;
     justify-content: center;
-    
+    margin-top: 100px;
     
 }
 
@@ -32,4 +32,6 @@ a{
     color: black;
 }
 
-
+.gif{
+    margin-top: 5px;
+}

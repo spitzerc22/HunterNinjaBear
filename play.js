@@ -1,21 +1,25 @@
-//event listeners for card options//
-const hunter = document.querySelector(".hunter")
-const ninja = document.querySelector(".ninja")
-const bear = document.querySelector(".bear")
+//event listeners options//
 const playAgain = document.querySelector(".playAgain")
-
-let getUserChoice = () => {
-  let choice = 
-}
+const choices = document.querySelectorAll(".img")
 
 
-
-hunter.addEventListener('click', () => {
+choices.forEach(choice => choice.addEventListener('click', () => {
+  
   const cards = document.querySelector(".cards")
-  cards.style.display = "none";
   const whoWins = document.querySelector(".whoWins")
+  cards.style.display = "none";
   whoWins.style.display = "flex";
-} )
+  
+  document.getElementById("userPickImage").src = choice.src
+  
+  let computerChoice = getComputerChoice();
+    //displays who won//
+    let whoWins = (whoWins(userChoice, computerChoice))
+    let winner = document.getElementById("#winner")
+    winner.textcontent = whoWins;
+}))
+
+
 
 //Play Again button//
 
@@ -49,30 +53,45 @@ playAgain.addEventListener('click', () => {
   
 //comparison, who wins each round// 
 
+let yourScore = document.querySelector(".score")
+let compScore = document.querySelector(".comscore")
+
   let whoWins = (userChoice, computerChoice) => {
     if(userChoice === computerChoice){
-    console.log('It\'s a tie!')
+    return('It\'s a tie!')
   } else if(userChoice === 'hunter') {
     if(computerChoice === 'ninja') {
-      console.log('The computer wins!')
-    } else {console.log('You win!')}
+      compScore += 1;
+      return('The computer wins!')
+    } else {
+      yourScore += 1;
+      return('You win!')}
   } else if(userChoice === 'ninja'){
     if(computerChoice === 'bear'){
-      console.log('The computer wins!')
-    } else {console.log('You win!')}
+      compScore += 1;
+      return('The computer wins!')
+    } else {
+      yourScore += 1;
+      return('You win!')}
   } else if(userChoice === 'bear'){
     if(computerChoice === 'hunter'){
-      console.log('The computer wins!')
-    } else {console.log('You win!')}
+      compScore += 1;
+      return('The computer wins!')
+    } else {
+      yourScore += 1;
+      return('You win!')}
   }
   }
   
 //calling to play the game//
 
-  let playGame = () => {
+  let playGame = () => { //run with event
     let userChoice = getUserChoice();
     let computerChoice = getComputerChoice();
     console.log('The computer threw ' + computerChoice)
     console.log('You threw ' + userChoice)
-    console.log(whoWins(userChoice, computerChoice))
+    //displays who won//
+    let whoWins = (whoWins(userChoice, computerChoice))
+    let winner = document.getElementById("#winner")
+    winner.textcontent = whoWins;
   }
