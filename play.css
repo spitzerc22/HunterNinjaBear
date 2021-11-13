@@ -1,0 +1,79 @@
+body{
+    background-image: linear-gradient(to bottom right, #a39984, #e6d3aa);
+    font-family: 'Odibee Sans', cursive;
+    height: 948px;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+
+.game{
+    background-color: white;
+    margin-top: 3em;
+    margin-left: 1.9in;
+    margin-right: 1.9in;
+    height: 8in;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-warning{
+    border: 1ex #dba604 solid;
+    font-size:x-large;
+    margin-top: 2ex;
+}
+
+.cards{
+    margin-top: 42px;
+    margin-left: 189px;
+    margin-right: 154px;
+    width: 800px;
+    height: 596px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hunter{
+    width: 572px;
+}
+.ninja{
+    width: 250px;
+    margin-right: 10px;
+}
+.bear{
+    width: 312px;
+}
+
+.yourScore{
+    margin-left: 67px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compScore{
+        margin-right: 44px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}

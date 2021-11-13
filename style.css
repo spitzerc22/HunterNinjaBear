@@ -1,4 +1,35 @@
-body {
-    background-color: #a39984;
-    font-family: 'Odibee Sans', cursive;
+.header{
+    margin-top: 20px;
+    height: 2in;
 }
+
+h1{
+    font-size: 30ex;
+}
+
+body{
+    background-image: linear-gradient(to bottom right, #a39984, #e6d3aa);
+    font-family: 'Odibee Sans', cursive;
+    font-size: 10px;
+    height: 948px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.btn{
+    border: 1ex #dba604 solid;
+    font-size:xx-large;
+    margin-top: 5ex;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+
