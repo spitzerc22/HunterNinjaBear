@@ -6,7 +6,7 @@ buttons.forEach(function (button) {
   button.toggle()
 })
 
-//event listeners for 'how to play' 'settings' reset'//
+//event listeners for 'how to play' reset'//
 
 let popUp = document.getElementById("how").addEventListener("click", () => {
     let message = document.createElement('div');

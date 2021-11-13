@@ -2,12 +2,29 @@
 const hunter = document.querySelector(".hunter")
 const ninja = document.querySelector(".ninja")
 const bear = document.querySelector(".bear")
+const playAgain = document.querySelector(".playAgain")
+
+let getUserChoice = () => {
+  let choice = 
+}
+
+
 
 hunter.addEventListener('click', () => {
-  let cards = document.querySelector(".cards")
+  const cards = document.querySelector(".cards")
   cards.style.display = "none";
-  
+  const whoWins = document.querySelector(".whoWins")
+  whoWins.style.display = "flex";
 } )
+
+//Play Again button//
+
+playAgain.addEventListener('click', () => {
+  const whoWins = document.querySelector(".whoWins")
+  whoWins.style.display = "none";
+  const cards = document.querySelector(".cards")
+  cards.style.display = "flex";
+})
 
 
 
@@ -53,7 +70,7 @@ hunter.addEventListener('click', () => {
 //calling to play the game//
 
   let playGame = () => {
-    let userChoice = getUserChoice('hunter');
+    let userChoice = getUserChoice();
     let computerChoice = getComputerChoice();
     console.log('The computer threw ' + computerChoice)
     console.log('You threw ' + userChoice)

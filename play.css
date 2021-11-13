@@ -65,15 +65,61 @@ a{
 .yourScore{
     margin-left: 67px;
     width: 150px;
+    height: 82px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 3px solid black;
+    border-radius: 2%;
 }
 
 .compScore{
         margin-right: 44px;
         width: 200px;
+        height: 82px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 3px solid black;
+        border-radius: 2%;
+}
+
+/* Game Field CSS */
+.whoWins{
+    display: none;
+    align-items: center;
+    margin-top: 230px;
+}
+
+.whoWon{
+    margin-top: 59px;
+    margin-left: 40px;
+}
+
+.yourChoice{
+    margin-right: 79px;
+}
+
+.compChoice{
+    margin-left: 128px;
+}
+
+.yourImg img{
+    width: 400px;
+}
+
+.compImg img{
+    width: 310px;
+}
+
+.whoWins h3{
+    text-align: center;
+}
+
+.tryAgain{
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
 }
