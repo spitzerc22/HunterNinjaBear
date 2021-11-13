@@ -123,3 +123,7 @@ a{
 p {
     font-size: 30px;
 }
+
+.choice:hover{
+    border: 5px solid black;
+}
