@@ -1,6 +1,7 @@
 body{
-    background-image: linear-gradient(to bottom right, #a39984, #e6d3aa);
+    background-image: linear-gradient(to bottom right, #182c7a, #6a3e87);
     font-family: 'Odibee Sans', cursive;
+    color: black;
     height: 948px;
 }
 
@@ -33,10 +34,14 @@ a{
     justify-content: space-around;
 }
 
-.btn-warning{
-    border: 1ex #dba604 solid;
+.btn-light{
+    border: 1ex white outset;
     font-size:x-large;
     margin-top: 2ex;
+}
+
+.btn-light:hover{
+    border: 1ex #03b5c1 outset;
 }
 
 .cards{
@@ -49,6 +54,10 @@ a{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.choice{
+    background-color: #d8d7f5;
 }
 
 .hunter{
@@ -69,19 +78,30 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid black;
-    border-radius: 2%;
+    background-color: rgb(47, 56, 173);
+    color: white;
+    
+}
+
+#userPick{
+    background-color: rgb(47, 56, 173);
+}
+
+#computerPick{
+    background-color: rgb(131, 83, 150);
+    transform: scaleX(-1);
 }
 
 .compScore{
-        margin-right: 44px;
-        width: 200px;
-        height: 82px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 3px solid black;
-        border-radius: 2%;
+    margin-right: 44px;
+    width: 200px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(131, 83, 150);
+    color: white;
+    
 }
 
 /* Game Field CSS */

@@ -23,20 +23,35 @@
     </header>
     <div class="buttons">
         <div class="button">
-            <button type="button" class="btn btn-warning btn-lg"><a href="play.html">Let's Play</a></button>
+            <button type="button" class="btn btn-light btn-lg"><a href="play.html">Let's Play</a></button>
         </div>
-        <div class="button">
-          
-            <button type="button" class="btn btn-warning btn-lg" id="how">How to Play</button>
-        
+        <!-- Button trigger modal from BS-->
+        <button type="button" class="howModal btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">How to Play</button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="text-dark modal-title" id="exampleModalLabel">How to Play</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                    <h4><b>OBJECTIVE:</b> Achieve a higher score than the AI by winning as many rounds as possible! You cannot stop unless you have a higher score! You are given 3 options to chose from: the Hunter, Ninja and Bear. Read the diagram below carefully as it will help you achieve victory!</h4>
+                    <div class="modalImg">
+                        <img src="assets/hunter.face.png" alt="hunter" class="hunterModal">
+                        <img src="assets/ninja.face.png" alt="ninja" class="ninjaModal">
+                        <img src="assets/bear.face.png" alt="bear"
+                        class="bearModal">
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
-
     <div class="gif">
-    <span><img src="assets/ninja.right.gif" alt="ninja" class="ninja"></span>
-    <span><img src="assets/bear.right.gif" alt="bear"></span>
-    <span><img src="assets/hunter.right.gif" alt="hunter"></span>
-    
+        <span><img src="assets/ninja.right.gif" alt="ninja"></span>
+        <span><img src="assets/bear.right.gif" alt="bear"></span>
+        <span><img src="assets/hunter.right.gif" alt="hunter"></span>
     </div>
 
 

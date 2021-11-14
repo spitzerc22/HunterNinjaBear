@@ -1,17 +1,23 @@
-.header{
-    margin-top: 20px;
-    height: 2in;
-}
-
 h1{
     font-size: 30ex;
 }
 
 body{
-    background-image: linear-gradient(to bottom right, #a39984, #e6d3aa);
+    background-image: linear-gradient(to bottom right, #182c7a, #6a3e87); /*(to bottom right, #a39984, #e6d3aa);*/
     font-family: 'Odibee Sans', cursive;
     font-size: 10px;
     height: 948px;
+    color: floralwhite;
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.header{
+    margin-top: 20px;
+    height: 2in;
 }
 
 .button{
@@ -21,17 +27,50 @@ body{
     
 }
 
-.btn{
-    border: 1ex #dba604 solid;
-    font-size:xx-large;
-    margin-top: 5ex;
+.btn-light{
+    border: 1ex white outset;
+    font-size:x-large;
+    margin-top: 2ex;
 }
 
-a{
-    text-decoration-line: none;
-    color: black;
+.btn-light:hover{
+    border: 1ex #03b5c1 outset;
 }
 
-.gif{
-    margin-top: 5px;
+.howModal{
+    margin-left: 893px;
+    margin-top: 150px;
+    margin-bottom: 135px;
+}
+
+
+.modal{
+    position: relative;
+    margin-top: -560px;
+}
+
+.modalImg{
+    background-image:url("assets/arrow.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-size: 400px;
+    background-position-x: center;
+}
+
+.hunterModal{
+    width: 300px;
+    margin-left: 150px;
+    margin-bottom: 62px;
+}
+
+.ninjaModal{
+    width: 177px;
+    margin-right: 110px;
+    margin-left:-23px;
+}
+
+.bearModal{
+    width: 185px;
+    margin-top: 42px;
+    margin-left: 14px;
 }
