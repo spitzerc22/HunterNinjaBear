@@ -1,7 +1,8 @@
 
 const playAgain = document.querySelector(".playAgain")
+const refresh = document.querySelector(".refresh")
 const choices = document.querySelectorAll(".img")
-let yourScore = document.getElementById("score")
+let yourScore = document.getElementById("score").innerHTML
 let compScore = document.getElementById("comscore")
 let finalWinner = document.getElementById("winner")
 
@@ -48,8 +49,8 @@ choices.forEach(choice => choice.addEventListener('click', () => {
 
   
   let comparison = whoWon(userChoice, computerChoice);
-  
   if(comparison === "You win!"){
+    
     finalWinner.append(comparison)
   } else if(comparison === "The computer wins!") {
     finalWinner.append(comparison)
@@ -86,3 +87,4 @@ playAgain.addEventListener('click', () => {
   const cards = document.querySelector(".cards")
   cards.style.display = "flex";
 })
+

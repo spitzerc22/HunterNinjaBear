@@ -19,7 +19,7 @@
         <!--Your Score-->
             <div class="card yourScore">
                 <h3>YOUR SCORE</h3>
-                <p id="score">0</p>
+                <p id="score"></p>
             </div>
         <!--3 choices-->
             <div class="cards">
@@ -59,7 +59,7 @@
         <!--Computer Score-->
             <div class="card compScore">
                 <h3>COMPUTER SCORE</h3>
-                <p id="comScore">0</p>
+                <p id="comScore"></p>
             </div>
         </div>
     </main>
@@ -93,7 +93,7 @@
             </div>
         
         <span class="button">
-            <button class="btn btn-light btn-lg" type="reset" value="Reset">Reset</button>
+            <button class="refresh btn btn-light btn-lg" type="reset" value="Reset" onClick="window.location.reload();">Reset</button>
         </span>
     </div>
     <script src="play.js"></script>
