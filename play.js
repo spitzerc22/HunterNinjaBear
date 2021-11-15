@@ -2,9 +2,9 @@
 const playAgain = document.querySelector(".playAgain")
 const refresh = document.querySelector(".refresh")
 const choices = document.querySelectorAll(".img")
-let yourScore = document.getElementById("score").innerHTML
-let compScore = document.getElementById("comscore")
-let finalWinner = document.getElementById("winner")
+let yourScore = 0;
+let compScore = 0;
+
 
 //Comparing your choice and computer choice to find winner//
 
@@ -50,15 +50,15 @@ choices.forEach(choice => choice.addEventListener('click', () => {
   
   let comparison = whoWon(userChoice, computerChoice);
   if(comparison === "You win!"){
-    
-    finalWinner.append(comparison)
+    yourScore += 1;
+    document.getElementById("score").textContent = yourScore;
+    document.getElementById("winner").textContent = comparison;
   } else if(comparison === "The computer wins!") {
-    finalWinner.append(comparison)
-  } else {finalWinner.append(comparison)}
-  
-  
- 
-  
+    compScore += 1;
+    document.getElementById("comScore").textContent = compScore;
+    document.getElementById("winner").textContent = comparison;
+  } else {document.getElementById("winner").textContent = comparison;}
+
   
 }))
 
@@ -86,5 +86,11 @@ playAgain.addEventListener('click', () => {
   whoWins.style.display = "none";
   const cards = document.querySelector(".cards")
   cards.style.display = "flex";
+  
 })
 
+//Refresh button//
+
+refresh.addEventListener('click', () => {
+  window.location.reload();
+})
