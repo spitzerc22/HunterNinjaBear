@@ -1,5 +1,7 @@
 
 const playAgain = document.querySelector(".playAgain")
+const howToBtn = document.querySelector(".howToBtn")
+const howToPlay = document.querySelector("#howToPlay")
 const refresh = document.querySelector(".refresh")
 const choices = document.querySelectorAll(".img")
 let yourScore = 0;
@@ -93,4 +95,34 @@ playAgain.addEventListener('click', () => {
 
 refresh.addEventListener('click', () => {
   window.location.reload();
+})
+
+//displaying 'how to play' on game page //
+
+
+howToPlay.addEventListener('click', () => {
+  const cards = document.querySelector(".cards");
+  cards.style.display = "none";
+  const directions = document.querySelector(".howToPlay");
+  directions.style.display = 'flex';
+  const first = document.querySelector(".first");
+  first.style.display = "none";
+  const second = document.querySelector(".second");
+  second.style.display = "flex";
+  
+})
+
+//Going back to game from directions//
+
+howToBtn.addEventListener('click', () => {
+    const directions = document.querySelector(".howToPlay");
+    directions.style.display = 'none';
+    const cards = document.querySelector(".cards");
+    cards.style.display = "flex";
+    const first = document.querySelector(".first");
+    first.style.display = "flex";
+    const second = document.querySelector(".second");
+    second.style.display = "nonels
+    ";
+    
 })
