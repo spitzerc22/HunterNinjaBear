@@ -122,7 +122,6 @@ howToBtn.addEventListener('click', () => {
     const first = document.querySelector(".first");
     first.style.display = "flex";
     const second = document.querySelector(".second");
-    second.style.display = "nonels
-    ";
+    second.style.display = "none";
     
 })
