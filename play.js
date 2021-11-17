@@ -4,8 +4,14 @@ const howToBtn = document.querySelector(".howToBtn")
 const howToPlay = document.querySelector("#howToPlay")
 const refresh = document.querySelector(".refresh")
 const choices = document.querySelectorAll(".img")
+const cards = document.querySelector(".cards")
+const whoWins = document.querySelector(".whoWins")
+const directions = document.querySelector(".howToPlay");
+const first = document.querySelector(".first");
+const second = document.querySelector(".second");
 let yourScore = 0;
 let compScore = 0;
+
 
 
 //Comparing your choice and computer choice to find winner//
@@ -36,9 +42,7 @@ let whoWon = (userChoice, computerChoice) => {
 choices.forEach(choice => choice.addEventListener('click', () => {
  
   let userChoice = choice.alt
-  const cards = document.querySelector(".cards")
   cards.style.display = "none";
-  const whoWins = document.querySelector(".whoWins")
   whoWins.style.display = "flex";
   document.getElementById("userPick").src = choice.src
 
@@ -84,9 +88,7 @@ let getComputerChoice = () => {
 //Play Again button//
 
 playAgain.addEventListener('click', () => {
-  const whoWins = document.querySelector(".whoWins")
   whoWins.style.display = "none";
-  const cards = document.querySelector(".cards")
   cards.style.display = "flex";
   
 })
@@ -101,13 +103,9 @@ refresh.addEventListener('click', () => {
 
 
 howToPlay.addEventListener('click', () => {
-  const cards = document.querySelector(".cards");
   cards.style.display = "none";
-  const directions = document.querySelector(".howToPlay");
   directions.style.display = 'flex';
-  const first = document.querySelector(".first");
   first.style.display = "none";
-  const second = document.querySelector(".second");
   second.style.display = "flex";
   
 })
@@ -115,13 +113,9 @@ howToPlay.addEventListener('click', () => {
 //Going back to game from directions//
 
 howToBtn.addEventListener('click', () => {
-    const directions = document.querySelector(".howToPlay");
-    directions.style.display = 'none';
-    const cards = document.querySelector(".cards");
-    cards.style.display = "flex";
-    const first = document.querySelector(".first");
-    first.style.display = "flex";
-    const second = document.querySelector(".second");
-    second.style.display = "none";
+  directions.style.display = 'none';
+  cards.style.display = "flex";
+  first.style.display = "flex";
+  second.style.display = "none";
     
 })

@@ -45,9 +45,9 @@ a{
 }
 
 .cards{
-    margin-top: 42px;
-    margin-left: -9px;
-    margin-right: -58px;
+    margin-top: 13px;
+    margin-left: 110px;
+    margin-right: 114px;
     width: 800px;
     height: 596px;
     display: flex;
@@ -73,7 +73,7 @@ a{
 
 .yourScore{
     margin-left: 49px;
-    margin-right: 150px;
+    margin-right: 32px;
     width: 206px;
     height: 111px;
     display: flex;
@@ -95,9 +95,9 @@ a{
 
 .compScore{
     text-align: center;
-    margin-right: 47px;
-    margin-left: 88px;
-    width: 261px;
+    margin-right: 75px;
+    margin-left: 9px;
+    width: 206px;
     height: 111px;
     display: flex;
     flex-direction: column;
@@ -147,8 +147,14 @@ p {
     font-size: 30px;
 }
 
+.choice{
+    border: 1ex white outset;
+    font-size:x-large;
+    margin-top: 2ex;
+}
+
 .choice:hover{
-    border: 5px solid black;
+    border: 1ex #03b5c1 outset;
 }
 
 .modalImg{
@@ -190,6 +196,8 @@ p {
     width: 800px;
     height: 600px;
     margin-top: 53px;
+    margin-left: 95px;
+    margin-right: 95px;
 }
 
 #userPick{

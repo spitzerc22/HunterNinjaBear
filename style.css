@@ -74,3 +74,23 @@ a{
     margin-top: 42px;
     margin-left: 14px;
 }
+
+/* Hoping to move my GIFs*/
+
+.gif{
+    position: relative;
+}
+
+#animate{
+    position: absolute;
+}
+
+/* Moving the bear*/
+
+.bear{
+    animation: walking 100s infinite;
+}
+
+@keyframes walking{
+    100% {margin-left: 1400px;}
+}
